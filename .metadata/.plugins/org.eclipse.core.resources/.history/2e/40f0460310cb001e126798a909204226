@@ -1,0 +1,36 @@
+package com.sungeon.realEstate.service.implement;
+
+import com.sungeon.realEstate.dto.request.CheckIdRequestDto;
+import com.sungeon.realEstate.dto.response.CheckIdResponseDto;
+import com.sungeon.realEstate.interfaces.Code;
+import com.sungeon.realEstate.repository.UserRepository;
+import com.sungeon.realEstate.repository.implement.UserRepositoryImplement;
+import com.sungeon.realEstate.service.AuthService;
+
+public class AuthServiceImplement implements AuthService {
+	
+	private UserRepository userRepository = new UserRepositoryImplement();
+
+	@Override
+	public CheckIdResponseDto checkId(CheckIdRequestDto dto) {
+		
+		CheckIdResponseDto result = new CheckIdResponseDto();
+		
+		try {
+			
+			String id = dto.getId();
+			
+			boolean existedId = userRepository.existsById(id);
+			
+			if (existedId) result.setCode(Code.DI);
+			else result.setCode(Code.SU);
+			
+		} catch (Exception exception) {
+			exception.printStackTrace();
+			result.setCode(Code.DBE);
+		}
+		
+		return result;
+	}
+
+}

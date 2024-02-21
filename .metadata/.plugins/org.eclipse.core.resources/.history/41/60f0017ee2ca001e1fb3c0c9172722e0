@@ -1,0 +1,5 @@
+package com.sungeon.realEstate.dto.response;
+
+public class CheckIdResponseDto {
+
+}

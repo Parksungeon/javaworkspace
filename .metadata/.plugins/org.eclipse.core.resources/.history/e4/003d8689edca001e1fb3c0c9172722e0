@@ -1,0 +1,8 @@
+package com.sungeon.realEstate.service;
+
+import com.sungeon.realEstate.dto.request.CheckIdRequestDto;
+import com.sungeon.realEstate.dto.response.CheckIdResponseDto;
+
+public interface AuthService {
+	CheckIdResponseDto checkId(CheckIdRequestDto dto);
+}

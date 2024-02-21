@@ -1,0 +1,5 @@
+package com.sungeon.realEstate.service;
+
+public interface AuthService {
+
+}

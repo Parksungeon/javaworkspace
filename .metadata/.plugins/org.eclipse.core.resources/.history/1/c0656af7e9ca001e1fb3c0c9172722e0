@@ -1,0 +1,15 @@
+package com.sungeon.realEstate.controller.implement;
+
+import com.sungeon.realEstate.controller.AuthController;
+import com.sungeon.realEstate.dto.request.CheckIdRepuestDto;
+import com.sungeon.realEstate.dto.response.CheckIdResponseDto;
+
+public class AuthControllerImplement implements AuthController {
+
+	@Override
+	public CheckIdResponseDto checkId(CheckIdRepuestDto request) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

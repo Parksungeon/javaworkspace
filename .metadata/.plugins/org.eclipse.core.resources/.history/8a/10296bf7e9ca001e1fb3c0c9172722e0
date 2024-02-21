@@ -1,0 +1,7 @@
+package com.sungeon.realEstate.service.implement;
+
+import com.sungeon.realEstate.service.AuthService;
+
+public class AuthServiceImplement implements AuthService {
+
+}

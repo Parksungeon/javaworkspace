@@ -1,0 +1,5 @@
+package com.sungeon.realEstate.repository;
+
+public interface EmailAuthenticationRepository {
+	
+}

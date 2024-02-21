@@ -1,0 +1,5 @@
+package com.sungeon.realEstate.repository.implement;
+
+public class EmailAuthenticationRepositoryImplement {
+
+}

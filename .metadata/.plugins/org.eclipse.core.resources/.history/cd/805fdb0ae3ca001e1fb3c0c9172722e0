@@ -1,0 +1,5 @@
+package com.sungeon.realEstate.interfaces;
+
+public enum Code {
+
+}

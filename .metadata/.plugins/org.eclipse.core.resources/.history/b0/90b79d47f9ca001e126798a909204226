@@ -1,0 +1,7 @@
+package com.sungeon.realEstate.repository;
+
+public interface UserRepository {
+
+	boolean existsById(String id);
+	
+}
